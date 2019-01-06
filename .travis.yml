@@ -14,7 +14,7 @@ after_success:
         - docker build -t tombenjaminmorris/multi-server ./server
         - docker build -t tombenjaminmorris/multi-worker ./worker
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-        - docker push tombejaminmorris/multi-client
-        - docker push tombejaminmorris/multi-nginx
-        - docker push tombejaminmorris/multi-server
-        - docker push tombejaminmorris/multi-worker
+        - docker push tombenjaminmorris/multi-client
+        - docker push tombenjaminmorris/multi-nginx
+        - docker push tombenjaminmorris/multi-server
+        - docker push tombenjaminmorris/multi-worker
